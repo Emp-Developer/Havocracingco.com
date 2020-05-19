@@ -1,0 +1,64 @@
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% section 'product-custom' %}
+
+<script type="application/json" id="ProductJson-{{ product.id }}">
+  {{ product | json }}
+</script>
+
+<script>
+  
+  $('document').ready(function () {
+  
+    if(HVC){
+    var customized = false;
+    var hvc = new HVC({
+			target: document.querySelector('hv-customizer')
+		});
+      hvc.store.set({
+        variants: {{product.variants | json }}
+      })
+        hvc.store.fire('VARIANTS_SET');
+        
+        $('#option-lens').val(hvc.store.get().options.lens[0].title);
+console.log($('#option-lens').val(hvc.store.get().options.lens[0].title))        ;
+
+        $('#option-frame').val(hvc.store.get().options.frame[0].title)
+        $('#option-strap').val(hvc.store.get().options.strap[0].title)
+        
+        hvc.store.on('UPDATE_CANVAS', function(val){
+        	if(val.lens === 0 && val.frame === 0 && val.strap === 0)
+              {
+                  customized = false
+              }
+              else{
+      		customized = true;
+              }
+      	})
+        
+        hvc.store.on('OPTIONS_SAVED', function(val){
+        $('#option-lens').val(val.lens);
+        $('#option-frame').val(val.frame);
+        $('#option-strap').val(val.strap);
+        $('#custom-image').val(val.productImage);
+        
+        $('.rimage__image').removeAttr('data-srcset');
+        $('.rimage__image').removeAttr('srcset');
+        $('.rimage__image').attr('src', val.productImage)
+        
+        if(customized)
+        {
+		//Change it into a custom product
+        $('#option-parts').val('Custom Goggle').trigger('change');
+        }
+         else{
+          	$('#option-parts').val('Default Title').trigger('change');
+          }
+      })
+    }
+    
+
+})
+</script>

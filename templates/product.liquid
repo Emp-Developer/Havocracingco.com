@@ -1,0 +1,29 @@
+{% comment %}
+  The contents of the product.liquid template can be found in /sections/product-template.liquid
+{% endcomment %}
+
+{% include 'customproductbuilder-initializer' %}
+
+<script type="application/json" id="ProductJson-{{ product.id }}">
+  {{ product | json }}
+</script>
+
+<script> 
+  var hvc = new HVC({
+    target: document.querySelector('hv-customizer'),
+  });
+  
+  hvc.set({
+    options: {{product.options_with_values | json}},
+    btnText: "Customize",
+    query:'_swiper-slide-active',
+    btnClass:'button',
+    closeBtnClass:'button'
+  })
+  
+  hvc.store.on('ITEM_SELECTED', selected)
+  
+  function selected(o){
+    $('option-'+(o.name)).val(o.value).trigger('change');
+  }
+</script>

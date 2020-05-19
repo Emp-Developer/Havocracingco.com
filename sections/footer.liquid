@@ -1,0 +1,104 @@
+<div class="page-footer">
+  {% if section.settings.show_signup %}
+    {% unless section.settings.hide_signup_home == true and template contains 'index' %}
+      <div class="signup-form padded-block background-tint form">
+        <div class="signup-form-container">
+          <h6 class="h1 title">{{ section.settings.newsletter_title | escape }}</h6>
+          <div class="message rte">{{ section.settings.newsletter_text }}</div>
+          {% form 'customer' %}
+            {% if form.posted_successfully? %}
+              <p class="msg">{{ 'layout.signup.post_success' | t }}</p>
+            {% else %}
+              {% if form.errors %}
+                {% for field in form.errors %}
+                  <p class="msg error">{{ field | capitalize }} - {{ form.errors.messages[field] }}</p>
+                {% endfor %}
+              {% endif %}
+              <div class="inline-input-button-row">
+                <div class="inline-input-button-row__input">
+                  <input type="hidden" id="contact_tags" name="contact[tags]" value="prospect,newsletter"/>
+                  <input type="email" class="text required" value="" name="contact[email]" placeholder="{{ 'layout.signup.placeholder' | t }}" />
+                </div>
+                <div class="inline-input-button-row__button">
+                  <button type="submit">{{ 'layout.signup.submit' | t }}</button>
+                </div>
+              </div>
+            {% endif %}
+          {% endform %}
+        </div>
+      </div>
+    {% endunless %}
+  {% endif %}
+
+  <div class="page-footer__lower">
+    <div class="page-footer__row">
+      {% if linklists[section.settings.menu_linklist].links.size > 0 %}
+      <ul class="nav">
+        {% for link in linklists[section.settings.menu_linklist].links %}
+        <li>{{ link.title | link_to: link.url }}</li>
+        {% endfor %}
+      </ul>
+      {% endif %}
+      {% include 'social-icons' %}
+    </div>
+
+    <div class="page-footer__row">
+      <div class="copy">
+        &copy; {{ "now" | date: "%Y" }} {{ shop.name | link_to: '/' }}.
+
+       
+
+       
+
+      </div>
+     
+    </div>
+  </div>
+</div>
+
+
+{% schema %}
+  {
+    "name": "Footer",
+    "settings": [
+      {
+        "type": "link_list",
+        "id": "menu_linklist",
+        "label": "Menu",
+		    "default": "footer",
+		    "info": "This menu won't show dropdown items"
+      },
+      {
+        "type": "header",
+        "content": "Newsletter signup"
+      },
+      {
+        "type": "checkbox",
+        "id": "show_signup",
+        "label": "Show newsletter signup"
+      },
+      {
+        "type": "checkbox",
+        "id": "hide_signup_home",
+        "label": "Exclude from home page",
+        "default": false
+      },
+      {
+        "type": "text",
+        "id": "newsletter_title",
+        "label": "Heading",
+        "default": "Inbox me!"
+      },
+	    {
+        "type": "richtext",
+        "id": "newsletter_text",
+        "label": "Subheading",
+        "default": "<p>Sign up to our newsletter and we’ll keep you up to date with the latest arrivals<\/p>"
+      },
+      {
+        "type": "paragraph",
+        "content": "Any customers who sign up will have an account created for them in Shopify. [View customers](/admin/customers?query=&accepts_marketing=1)"
+      }
+    ]
+  }
+{% endschema %}

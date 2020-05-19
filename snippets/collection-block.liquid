@@ -1,0 +1,14 @@
+<div class="block product size-medium" {{ custom_attrs }}>
+  <div class="main">
+    <a class="img-link" href="{{ collection.url }}" title="{{ collection.title }}">
+      {% if collection.image %}
+        {% include 'responsive-image', image: collection.image %}
+      {% else %}
+        {% include 'responsive-image', image: collection.all_products.first.featured_image %}
+      {% endif %}
+    </a>
+  </div>
+  <div class="sub">
+    <p><a class="product-block-title" href="{{ collection.url }}">{{ collection.title }}</a></p>
+  </div>
+</div>

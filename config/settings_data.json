@@ -1,0 +1,537 @@
+{
+  "presets": {
+    "Chameleon": {
+      "block_width_int": 250,
+      "block_gut_int": 10,
+      "use_logo_img": false,
+      "logo": "",
+      "use_logo_margin": false,
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "bg_image_mobile": "",
+      "font_col_base": "#5b6169",
+      "font_col_heads": "#212121",
+      "font_col_link": "#512da8",
+      "font_col_div": "#e7e7e7",
+      "btn_col": "#212121",
+      "btn_col_txt": "#ffffff",
+      "font_col_shoptitle": "#212121",
+      "logo_bg_col": "#fffca3",
+      "header_bg_col": "#212121",
+      "header_text_col": "#ffffff",
+      "panel_bg_col": "#fffca3",
+      "panel_txt_pri_col": "#212121",
+      "coll_col_sale": "#e91e63",
+      "coll_col_sold": "#607d8b",
+      "coll_col_gen": "#00bcd4",
+      "type_base_font": "roboto_n4",
+      "type_heading_font": "roboto_n4",
+      "type_logo_font": "roboto_n4",
+      "font_size_base_int": 14,
+      "prod_block_qv": true,
+      "prod_show_sku": true,
+      "prod_show_vendor": true,
+      "prod_block_label_loc": "c",
+      "prod_label_sale_enabled": true,
+      "prod_label_soldout_enabled": true,
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 5,
+      "adv_ratio": true,
+      "prod_thumb_img_ratio": "100",
+      "search_type": "product",
+      "favicon": "",
+      "show_multiple_currencies": false,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "CAD USD",
+      "default_currency": "CAD",
+      "enable_ajax_add": true,
+      "cart_terms_show": false,
+      "cart_terms_page": "frontpage",
+      "shipping_calculator": "Disabled",
+      "shipping_calculator_default_country": "United States"
+    },
+    "Flamingo": {
+      "block_width_int": 250,
+      "block_gut_int": 10,
+      "use_logo_img": false,
+      "logo": "",
+      "use_logo_margin": false,
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "bg_image_mobile": "",
+      "font_col_base": "#4a597f",
+      "font_col_heads": "#002a50",
+      "font_col_link": "#039be5",
+      "font_col_div": "#e7e7e7",
+      "btn_col": "#002a50",
+      "btn_col_txt": "#ffffff",
+      "font_col_shoptitle": "#ffffff",
+      "logo_bg_col": "#00bcd4",
+      "header_bg_col": "#58585a",
+      "header_text_col": "#ffffff",
+      "panel_bg_col": "#00bcd4",
+      "panel_txt_pri_col": "#ffffff",
+      "coll_col_sale": "#ff0066",
+      "coll_col_sold": "#666666",
+      "coll_col_gen": "#3f51b5",
+      "type_base_font": "work_sans_n4",
+      "type_heading_font": "work_sans_n6",
+      "type_logo_font": "roboto_mono_n7",
+      "font_size_base_int": 14,
+      "prod_block_qv": true,
+      "prod_show_sku": true,
+      "prod_show_vendor": true,
+      "prod_block_label_loc": "c",
+      "prod_label_sale_enabled": true,
+      "prod_label_soldout_enabled": true,
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 5,
+      "adv_ratio": false,
+      "prod_thumb_img_ratio": "100",
+      "show_multiple_currencies": false,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "CAD USD",
+      "default_currency": "CAD",
+      "enable_ajax_add": true,
+      "cart_terms_show": false,
+      "cart_terms_page": "frontpage",
+      "shipping_calculator": "Disabled",
+      "shipping_calculator_default_country": "United States"
+    },
+    "Dragonfly": {
+      "block_width_int": 250,
+      "block_gut_int": 10,
+      "use_logo_img": false,
+      "logo": "",
+      "use_logo_margin": false,
+      "bg_col": "#fdfdf9",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "bg_image_mobile": "",
+      "font_col_base": "#5d5d60",
+      "font_col_heads": "#28282c",
+      "font_col_link": "#4b708f",
+      "font_col_div": "#cfdbe0",
+      "btn_col": "#4b708f",
+      "btn_col_txt": "#fdfdf9",
+      "font_col_shoptitle": "#0c0f22",
+      "logo_bg_col": "#a9d1d6",
+      "header_bg_col": "#0c0f22",
+      "header_text_col": "#fdfdf9",
+      "panel_bg_col": "#fdfdf9",
+      "panel_txt_pri_col": "#4b708f",
+      "coll_col_sale": "#4b708f",
+      "coll_col_sold": "#0c0f22",
+      "coll_col_gen": "#a9d1d6",
+      "type_base_font": "karla_n4",
+      "type_heading_font": "karla_n7",
+      "type_logo_font": "karla_n7",
+      "font_size_base_int": 14,
+      "prod_block_qv": true,
+      "prod_show_sku": true,
+      "prod_show_vendor": true,
+      "prod_block_label_loc": "c",
+      "prod_label_sale_enabled": true,
+      "prod_label_soldout_enabled": true,
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 5,
+      "adv_ratio": false,
+      "prod_thumb_img_ratio": "100",
+      "show_multiple_currencies": false,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "CAD USD",
+      "default_currency": "CAD",
+      "enable_ajax_add": true,
+      "cart_terms_show": false,
+      "cart_terms_page": "frontpage",
+      "shipping_calculator": "Disabled",
+      "shipping_calculator_default_country": "United States"
+    },
+    "Coyote": {
+      "block_width_int": 350,
+      "block_gut_int": 10,
+      "use_logo_img": false,
+      "logo": "",
+      "use_logo_margin": false,
+      "bg_col": "#ffffff",
+      "bg_image": "",
+      "bg_method": "repeatxy",
+      "bg_image_mobile": "",
+      "font_col_base": "#343434",
+      "font_col_heads": "#000000",
+      "font_col_link": "#f95400",
+      "font_col_div": "#e7e7e7",
+      "btn_col": "#f95400",
+      "btn_col_txt": "#ffffff",
+      "font_col_shoptitle": "#ffffff",
+      "logo_bg_col": "#141414",
+      "header_bg_col": "#333333",
+      "header_text_col": "#d6d6d6",
+      "panel_bg_col": "#141414",
+      "panel_txt_pri_col": "#ffffff",
+      "coll_col_sale": "#ff5555",
+      "coll_col_sold": "#141414",
+      "coll_col_gen": "#f95400",
+      "type_base_font": "roboto_condensed_n4",
+      "type_heading_font": "roboto_condensed_n7",
+      "type_logo_font": "roboto_condensed_n7",
+      "font_size_base_int": 14,
+      "prod_block_qv": true,
+      "prod_show_sku": true,
+      "prod_show_vendor": true,
+      "prod_block_label_loc": "c",
+      "prod_label_sale_enabled": true,
+      "prod_label_soldout_enabled": true,
+      "prod_stock_warn_show": true,
+      "prod_stock_warn_limit_int": 5,
+      "adv_ratio": true,
+      "prod_thumb_img_ratio": "100",
+      "show_multiple_currencies": true,
+      "currency_format": "money_with_currency_format",
+      "supported_currencies": "CAD USD",
+      "default_currency": "CAD",
+      "enable_ajax_add": true,
+      "cart_terms_show": false,
+      "cart_terms_page": "frontpage",
+      "shipping_calculator": "Disabled",
+      "shipping_calculator_default_country": "United States"
+    }
+  },
+  "current": {
+    "font_col_base": "#343434",
+    "font_col_heads": "#000000",
+    "font_col_link": "#8d7c48",
+    "font_col_div": "#e7e7e7",
+    "btn_col": "#8d7c48",
+    "btn_col_txt": "#ffffff",
+    "font_col_shoptitle": "#ffffff",
+    "logo_bg_col": "#141414",
+    "header_bg_col": "#d70c0c",
+    "header_text_col": "#ffffff",
+    "panel_bg_col": "#141414",
+    "panel_txt_pri_col": "#ffffff",
+    "bg_col": "#ffffff",
+    "bg_image": "",
+    "bg_method": "repeatxy",
+    "bg_image_mobile": "",
+    "coll_col_sale": "#ff5555",
+    "coll_col_sold": "#141414",
+    "coll_col_gen": "#8d7c48",
+    "type_base_font": "source_sans_pro_n4",
+    "type_heading_font": "roboto_condensed_n4",
+    "type_logo_font": "roboto_condensed_n4",
+    "font_size_base_int": 14,
+    "prod_block_qv": true,
+    "prod_block_label_loc": "c",
+    "prod_label_sale_enabled": true,
+    "prod_label_soldout_enabled": true,
+    "prod_stock_warn_show": true,
+    "prod_stock_warn_limit_int": 5,
+    "block_width_int": 350,
+    "block_gut_int": 15,
+    "adv_ratio": false,
+    "prod_thumb_img_ratio": "100",
+    "search_type": "product,page",
+    "favicon": "shopify:\/\/shop_images\/Havoc-Favicon.png",
+    "social_twitter_url": "https:\/\/twitter.com\/havocracingco",
+    "social_facebook_url": "https:\/\/www.facebook.com\/HavocRacingCo\/",
+    "social_pinterest_url": "",
+    "social_vimeo_url": "",
+    "social_youtube_url": "https:\/\/www.youtube.com\/channel\/UCTfdxb7RkbrNFZQ24oXrIrA",
+    "social_instagram_url": "https:\/\/www.instagram.com\/havocracingco_\/",
+    "social_google_url": "",
+    "social_custom_icon": "",
+    "social_custom_url": "",
+    "show_multiple_currencies": false,
+    "currency_format": "money_with_currency_format",
+    "supported_currencies": "CAD USD",
+    "default_currency": "USD",
+    "checkout_header_image": "",
+    "checkout_logo_image": "shopify:\/\/shop_images\/COVID-19-Announcement-Banner_035b6146-2967-4570-b94d-73ab13bbbca3.jpg",
+    "checkout_logo_position": "left",
+    "checkout_logo_size": "medium",
+    "checkout_body_background_image": "",
+    "checkout_body_background_color": "#fff",
+    "checkout_input_background_color_mode": "white",
+    "checkout_sidebar_background_image": "",
+    "checkout_sidebar_background_color": "#fafafa",
+    "checkout_heading_font": "Helvetica Neue",
+    "checkout_body_font": "Helvetica Neue",
+    "checkout_accent_color": "#1990c6",
+    "checkout_button_color": "#1990c6",
+    "checkout_error_color": "#ff6d6d",
+    "enable_ajax_add": true,
+    "cart_terms_show": false,
+    "cart_terms_page": "frontpage",
+    "shipping_calculator": "Disabled",
+    "shipping_calculator_default_country": "United States",
+    "use_logo_img": false,
+    "logo": "",
+    "use_logo_margin": false,
+    "prod_show_sku": true,
+    "prod_show_vendor": true,
+    "sections": {
+      "header": {
+        "type": "header",
+        "settings": {
+          "logo": "shopify:\/\/shop_images\/White-Profile_0e5ef1dc-039f-4258-a206-8c6ee63eb26c.png",
+          "use_logo_margin": true,
+          "menu_linklist": "main-menu",
+          "sidebar_submenu_style": "in",
+          "show_store_message": true,
+          "store_message": "DUE TO HIGH DEMAND AND COVID-19 DELAYS, INFINITY GOGGLES AND LENSES ARE ON BACKORDER FOR 1-3 WEEKS",
+          "store_message_url": "shopify:\/\/products\/customize-1"
+        }
+      },
+      "footer": {
+        "type": "footer",
+        "settings": {
+          "menu_linklist": "footer",
+          "show_signup": true,
+          "hide_signup_home": false,
+          "newsletter_title": "Inbox me!",
+          "newsletter_text": "<p>Stay up to date with&nbsp;Havoc news&nbsp;and coupon codes!<\/p>"
+        }
+      },
+      "collection-template": {
+        "type": "collection-template",
+        "settings": {
+          "coll_num_per_page_int": 24,
+          "coll_infscr": true,
+          "coll_show_sort": false,
+          "coll_show_feat": false,
+          "show_tagfilt_ungrouped": false,
+          "show_tagfilt_custom1": false,
+          "tagfilt_custom1_name": "",
+          "tagfilt_custom1_tags": "",
+          "show_tagfilt_custom2": false,
+          "tagfilt_custom2_name": "",
+          "tagfilt_custom2_tags": ""
+        }
+      },
+      "blog-template": {
+        "type": "blog-template",
+        "settings": {
+          "display_mode_list": false,
+          "show_author": false,
+          "block_width_int": 250,
+          "block_gut_int": 15
+        }
+      },
+      "product-template": {
+        "type": "product-template",
+        "settings": {
+          "prod_show_sku": false,
+          "prod_show_vendor": false,
+          "prod_show_type": true,
+          "prod_show_tags": true,
+          "prod_desc_under": true,
+          "enable_ajax_add": true,
+          "enable_payment_button": false,
+          "related_products_show": true
+        }
+      },
+      "1478012417548": {
+        "type": "featured-blog",
+        "settings": {
+          "title": "Upcoming Events",
+          "blog": "upcoming-events",
+          "show_author": false
+        }
+      },
+      "1478617204733": {
+        "type": "slideshow",
+        "blocks": {
+          "1479471967287": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Deepz_Infinity.jpg",
+              "link_url": "shopify:\/\/collections\/havoc-infinity",
+              "heading": "INFINITY",
+              "subheading": "Magnetic Lens",
+              "button_text": "See more",
+              "overlay_position": "posy-bottom posx-left",
+              "overlay_color": "col-light"
+            }
+          },
+          "1549523228024": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Elite_Stealth.jpg",
+              "link_url": "shopify:\/\/collections\/elite-section",
+              "heading": "HAVOC ELITE",
+              "subheading": "Best Seller",
+              "button_text": "See more",
+              "overlay_position": "posy-top posx-right",
+              "overlay_color": "col-light"
+            }
+          },
+          "1578376981493": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Medium_Infinity.jpg",
+              "link_url": "shopify:\/\/products\/flamingo",
+              "heading": "FLAMINGO",
+              "subheading": "Infinity Goggle",
+              "button_text": "See more",
+              "overlay_position": "posy-top posx-right",
+              "overlay_color": "col-dark"
+            }
+          },
+          "1529054861135": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Infinity-Header02_3af7a1be-f442-4c20-9453-af9be089e228.jpg",
+              "link_url": "shopify:\/\/collections\/havoc-infinity",
+              "heading": "INFINITY",
+              "subheading": "Fully Customizable",
+              "button_text": "See More",
+              "overlay_position": "posy-middle posx-left",
+              "overlay_color": "col-dark"
+            }
+          },
+          "1549268532883": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Header.jpg",
+              "link_url": "",
+              "heading": "",
+              "subheading": "",
+              "button_text": "",
+              "overlay_position": "posy-middle posx-middle",
+              "overlay_color": "col-light"
+            }
+          }
+        },
+        "block_order": [
+          "1479471967287",
+          "1549523228024",
+          "1578376981493",
+          "1529054861135",
+          "1549268532883"
+        ],
+        "settings": {
+          "type": "full-page",
+          "type_overlay_font": "basic_commercial_n4",
+          "slide_overlay_line1_size_int": 60
+        }
+      },
+      "1479310709089": {
+        "type": "custom-row",
+        "blocks": {
+          "1479310709089-1": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Infinity01.jpg",
+              "link_url": "shopify:\/\/collections\/infinity-section",
+              "text": "INFINITY GOGGLES",
+              "color": "#ffffff"
+            }
+          },
+          "1479310709089-2": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/Sunglass01.jpg",
+              "link_url": "shopify:\/\/collections\/havoc-sunglasses",
+              "text": "SUNGLASSES",
+              "color": "#000000"
+            }
+          },
+          "1565381250924": {
+            "type": "image",
+            "settings": {
+              "image": "shopify:\/\/shop_images\/header_cd08f0f7-d458-46d1-a036-9ac1fd2b15d4.jpg",
+              "link_url": "shopify:\/\/collections\/elite-section",
+              "text": "ELITE GOGGLES",
+              "color": "#ffffff"
+            }
+          }
+        },
+        "block_order": [
+          "1479310709089-1",
+          "1479310709089-2",
+          "1565381250924"
+        ],
+        "settings": {}
+      },
+      "1481722768807": {
+        "type": "featured-collection",
+        "settings": {
+          "title": "Best Sellers",
+          "collection": "havoc-goggles"
+        }
+      },
+      "1481722861363": {
+        "type": "featured-text",
+        "settings": {
+          "title": "Wreak Havoc",
+          "text": "<p>An entire brand dedicated to wreaking Havoc! We bring you the highest quality&nbsp;products for an even better price! Everything is premium quality and designed by the rider, for the rider!<\/p>"
+        }
+      },
+      "cart-template": {
+        "type": "cart-template",
+        "settings": {
+          "cart_terms_show": false,
+          "cart_terms_page": "",
+          "shipping_calculator": "Enabled",
+          "shipping_calculator_default_country": "United States"
+        }
+      },
+      "1546900227854": {
+        "type": "featured-collections",
+        "disabled": true,
+        "blocks": {
+          "1546900227854-0": {
+            "type": "collection",
+            "settings": {
+              "collection": "goggles"
+            }
+          },
+          "1546900227854-1": {
+            "type": "collection",
+            "settings": {
+              "collection": "havoc-sunglasses"
+            }
+          },
+          "1546900227854-2": {
+            "type": "collection",
+            "settings": {
+              "collection": "havoc-apparel"
+            }
+          }
+        },
+        "block_order": [
+          "1546900227854-0",
+          "1546900227854-1",
+          "1546900227854-2"
+        ],
+        "settings": {
+          "title": "SHOP"
+        }
+      },
+      "product-custom": {
+        "type": "product-custom",
+        "settings": {
+          "prod_show_sku": false,
+          "prod_show_vendor": false,
+          "prod_show_type": false,
+          "prod_show_tags": false,
+          "prod_desc_under": false,
+          "enable_ajax_add": true,
+          "enable_payment_button": false,
+          "related_products_show": false
+        }
+      }
+    },
+    "content_for_index": [
+      "1478617204733",
+      "1481722861363",
+      "1546900227854",
+      "1479310709089",
+      "1481722768807",
+      "1478012417548"
+    ]
+  }
+}

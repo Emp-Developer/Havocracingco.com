@@ -1,0 +1,24 @@
+{% layout false %}
+
+{% section 'product-template' %}
+
+
+<script type="application/json" id="ProductJson-{{ product.id }}">
+  {{ product | json }}
+</script>
+
+{%unless product.has_only_default_variant%}
+
+<hv-customizer></hv-customizer>
+
+<style>
+  
+  .option-selectors, .gallery-thumbs, .swiper-button-prev, .swiper-button-next{
+    display:none;
+    
+  }
+  
+</style>
+
+{%-endunless-%}
+

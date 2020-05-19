@@ -1,0 +1,80 @@
+<div class="content-header">
+  <h1 class="page-title">{{ page.title }}</h1>
+</div>
+
+<div class="reading-container reading-container--form">
+  <div class="rte">{{ page.content }}</div>
+
+  <div class="form">
+    {% form 'contact' %}
+    {% if form.posted_successfully? %}
+    <p><strong>{{ 'contact.form.post_success' | t }}</strong></p>
+    {% else %}
+
+    {% if form.errors %}
+    <ul>
+      {% for field in form.errors %}
+      <li class="error">{{ field | replace: 'body','Message' | capitalize }} - {{ form.errors.messages[field] }}</li>
+      {% endfor %}
+    </ul>
+    {% endif %}
+
+    <div class="inputrow{% if form.errors contains 'name' %} has-error{% endif %}">
+      <label for="contact_name" class="hoverlabel">{{ 'contact.form.name' | t }}</label>
+      <input type="text" data-fieldname="{{ 'contact.form.name' | t }}" class="required" id="contact_name" name="contact[name]" />
+    </div>
+    <div class="inputrow{% if form.errors contains 'email' %} has-error{% endif %}">
+      <label for="contact_email" class="hoverlabel">{{ 'contact.form.email' | t }}</label>
+      <input type="email" data-fieldname="{{ 'contact.form.email' | t }}" class="required" id="contact_email" class="email" name="contact[email]" />
+    </div>
+     <label for="ContactFormAge">Age</label><br>
+<input type="text" id="ContactFormAge" name="contact[Age]" placeholder="">
+    <br>
+    <div class="inputrow{% if form.errors contains 'body' %} has-error{% endif %}">
+      <label for="ContactFormRaceResults">Race Results</label>
+      <textarea id="message" name="contact[Results]"></textarea>
+    </div>
+     <div class="inputrow{% if form.errors contains 'body' %} has-error{% endif %}">
+      <label for="ContactFormRaceClass">Race Class</label>
+      <textarea id="message" name="contact[Class]"></textarea>
+    </div>
+       <div class="inputrow{% if form.errors contains 'body' %} has-error{% endif %}">
+      <label for="ContactFormEvents">Events you plan on attending for the 2019 season</label>
+      <textarea id="message" name="contact[Events]"></textarea>
+    </div>
+       <div class="inputrow{% if form.errors contains 'body' %} has-error{% endif %}">
+      <label for="ContactFormCurrentSponsors">Current Sponsors (If you have any)</label>
+      <textarea id="message" name="contact[CurrentSponsors]"></textarea>
+    </div>
+       <div class="inputrow{% if form.errors contains 'body' %} has-error{% endif %}">
+      <label for="ContactFormShortBio">Short bio about yourself</label>
+      <textarea id="message" name="contact[ShortBio]" class="required"></textarea>
+    </div>
+       <div class="inputrow{% if form.errors contains 'body' %} has-error{% endif %}">
+      <label for="ContactFormWhy">Why do you think you'd be a great addition to our team?</label>
+      <textarea id="message" name="contact[Why]" class="required"></textarea>
+    </div>
+     <label for="ContactFormInstagram">Instagram</label><br>
+<input type="text" id="ContactFormInstagram" name="contact[Instagram]" placeholder="Paste URL">
+    <br>
+    <br>
+     <label for="ContactFormTwitter">Twitter</label><br>
+<input type="text" id="ContactFormTwitter" name="contact[Twitter]" placeholder="Paste URL">
+    <br>
+    <br>
+    <label for="ContactFormFacebook">Facebook</label><br>
+<input type="text" id="ContactFormFacebook" name="contact[Facebook]" placeholder="Paste URL">
+    <br>
+    <br>
+        <label for="ContactFormYoutube">Youtube</label><br>
+<input type="text" id="ContactFormYoutube" name="contact[Youtube]" placeholder="Paste URL">
+    <br>
+    
+    <div class="buttonrow">
+      <input type="submit" class="button full-width" value="{{ 'contact.form.send' | t }}" />
+    </div>
+
+    {% endif %}
+    {% endform %}
+  </div>
+</div>
